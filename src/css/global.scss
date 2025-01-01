@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: 0;
+    scroll-behavior: smooth;
+    transition: background-color 1s, color 0.5s;
+}
+
+/* Variáveis globais */
+:root {
+    --background: #ffffff;
+    --background-gradient: linear-gradient(to bottom, #5a1d5e, #8e44ad, #c79ac7);
+    --form-gradient: linear-gradient(to right,#855b9e, #454587, #1a1a3d);
+    --text: #000000;
+    --footer-background: #301033;
+    --header-background-rgb: 48, 16, 51;
+    --slider-background: #24244e;
+    --banner: url("../js/assets/BannerDia.jpg");
+    --nuvem-fundo: url("../js/assets/fundo.png");
+    --nuvem-frente: url("../js/assets/frente.png");
+    --margin-bottom-form: 50px;
+}
+
+.dark {
+    --background: #333333;
+    --background-gradient: linear-gradient(to bottom, #1A1A3D, #454587, #855B9E);
+    --form-gradient: linear-gradient(to right, #a68ca6, #8e44ad, #5a1d5e);
+    --text: #ffffff;
+    --footer-background: #0f0f22;
+    --header-background-rgb: 15, 15, 34; 
+    --slider-background: #6f2e7f;
+    --banner: url("../js/assets/BannerNoite.jpg");
+    --nuvem-fundo: url("../js/assets/fundoEscuro.png");
+    --nuvem-frente: url("../js/assets/frenteEscuro.png");
+    --margin-bottom-form: 1px;
+}
+
+/* Fonte padrão */
+body {
+    font-family: poppins;
+    transition: background-color 3s, color 0.5s;
+    scrollbar-width: 0;
+    
+}
+
+/* Estilo padrão para imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo padrão para a logo */
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}

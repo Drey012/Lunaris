@@ -1,0 +1,25 @@
+.star {
+  display: flex;
+}
+
+.star-item {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  color: #ccc;
+}
+
+.star-item.active {
+  color: #ffe000;
+}
+
+/* Hover aplica cor às estrelas correspondentes */
+.star-item:hover:before,
+.star-item:hover ~ .star-item:before {
+  color: #ffe000;
+}
+
+/* Reaplique a cor ao passar o mouse, garantindo que o comportamento seja consistente */
+.star-item:hover:before {
+  color: #ffe000;
+}
