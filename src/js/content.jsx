@@ -6,6 +6,14 @@ import lightBanner from './assets/lightBanner.png';
 import darkBanner from './assets/darkBanner.png';
 import { ThemeContext } from './themeContext';
 import StarRating from "./starRating";
+import Noturno from './assets/Noturno.png';
+import Externo from './assets/Externo.png';
+import Diario from './assets/Diario.png';
+import DiaNoite from './assets/DiaNoite.png';
+import Toallas from './assets/Toallas.png';
+import Olivia from './assets/Olivia.png';
+import User from './assets/user.png';
+import AnaJulia from './assets/AnaJulia.png';
 
 function Content() {
   const { theme } = useContext(ThemeContext);
@@ -34,17 +42,17 @@ function Content() {
   };
 
   const produtos = [
-    { id: 1, nome: 'Absorvente Noturno', preco: 'R$ 26,99', img: 'src/js/assets/Noturno.png' },
-    { id: 2, nome: 'Absorvente Externo', preco: 'R$ 26,99', img: 'src/js/assets/Externo.png' },
-    { id: 3, nome: 'Protetor Diário', preco: 'R$ 26,99', img: 'src/js/assets/Diario.png' },
-    { id: 4, nome: 'Protetor Dia e Noite', preco: 'R$ 26,99', img: 'src/js/assets/DiaNoite.png' },
-    { id: 5, nome: 'Absorvente Sem Abas', preco: 'R$ 26,99', img: 'src/js/assets/Toallas.png' },
+    { id: 1, nome: 'Absorvente Noturno', preco: 'R$ 26,99', img: Noturno },
+    { id: 2, nome: 'Absorvente Externo', preco: 'R$ 26,99', img: Externo },
+    { id: 3, nome: 'Protetor Diário', preco: 'R$ 26,99', img: Diario },
+    { id: 4, nome: 'Protetor Dia e Noite', preco: 'R$ 26,99', img: DiaNoite },
+    { id: 5, nome: 'Absorvente Sem Abas', preco: 'R$ 26,99', img: Toallas },
   ];
 
   const feedbacks = [
-    { id: 1, nome: 'Olivia Tanake', cargo: 'Pesquisadora da USP', title: 'Impressionante!', comentario: '"Ótima qualidade e super confortável!"', pic: 'src/js/assets/Olivia.png' },
-    { id: 2, nome: 'Sr. Alfons', cargo: 'CEO da Representa', title: 'Top', comentario: '"Usei e aprovei! Representou!"', pic: 'src/js/assets/user.png' },
-    { id: 3, nome: 'Ana Júlia Moraes', cargo: 'Gerente da oBoticário', title: 'Recomendo', comentario: '"Produto com alta tecnologia!"', pic: 'src/js/assets/AnaJulia.png' },
+    { id: 1, nome: 'Olivia Tanake', cargo: 'Pesquisadora da USP', title: 'Impressionante!', comentario: '"Ótima qualidade e super confortável!"', pic: Olivia },
+    { id: 2, nome: 'Sr. Alfons', cargo: 'CEO da Representa', title: 'Top', comentario: '"Usei e aprovei! Representou!"', pic: User },
+    { id: 3, nome: 'Ana Júlia Moraes', cargo: 'Gerente da oBoticário', title: 'Recomendo', comentario: '"Produto com alta tecnologia!"', pic: AnaJulia },
   ];
 
   return (
